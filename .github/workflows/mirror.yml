@@ -2,7 +2,7 @@ name: mirror
 
 on:
   repository_dispatch:
-    -types: [mirror]
+    - types: [mirror]
   workflow_dispatch:
   schedule:
     - cron:  '30 5 10 * *'
