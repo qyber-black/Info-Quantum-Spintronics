@@ -1,0 +1,16 @@
+name: Mirror Qyber Wiki
+
+on:
+  repository_dispatch:
+    types: [mirror]
+  workflow_dispatch:
+
+jobs:
+  mirror:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: mirror
+      run: ./mirror.sh
+      env:
+        WIKI_PERSONAL_ACCESS_TOKEN: ${{ secrets.WIKI_PERSONAL_ACCESS_TOKEN }}
