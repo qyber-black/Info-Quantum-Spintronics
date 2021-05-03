@@ -11,4 +11,4 @@ jobs:
     - name: mirror
       run: ./mirror.sh
       env:
-        WIKI_PERSONAL_ACCESS_TOKENL{{ secrets.WIKI_PERSONAL_ACCESS_TOKEN }}
+        WIKI_PERSONAL_ACCESS_TOKEN: ${{ secrets.WIKI_PERSONAL_ACCESS_TOKEN }}
