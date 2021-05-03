@@ -4,8 +4,6 @@ on:
   repository_dispatch:
     types: [mirror]
   workflow_dispatch:
-  schedule:
-    - cron:  '30 5 10 * *'
 
 jobs:
   mirror:
