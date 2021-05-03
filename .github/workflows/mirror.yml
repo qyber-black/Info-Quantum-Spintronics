@@ -10,3 +10,5 @@ jobs:
     - uses: actions/checkout@v2
     - name: mirror
       run: ./mirror.sh
+      env:
+        WIKI_PERSONAL_ACCESS_TOKENL{{ secrets.WIKI_PERSONAL_ACCESS_TOKEN }}
