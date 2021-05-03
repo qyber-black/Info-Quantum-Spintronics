@@ -9,7 +9,7 @@ fi
 
 echo "# Cloning github wiki"
 git clone "https://${WIKI_PERSONAL_ACCESS_TOKEN}@${GITHUB_SERVER_URL#https://}/$GITHUB_REPOSITORY.wiki.git"
-cd "$GITHUB_REPOSITORY.wiki"
+cd "`basename $GITHUB_REPOSITORY.wiki`"
 
 echo "# Rebasing qyber wiki"
 git remote add qyber https://qyber.black/quantum-spintronics/info-quantum-spintronics.wiki.git
