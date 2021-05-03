@@ -1,0 +1,11 @@
+name: mirror
+
+on: 
+  workflow_dispatch:
+
+jobs:
+  mirror:
+    run-on: debian-latest
+    steps:
+    - name: mirror
+      run: ./mirror.sh
