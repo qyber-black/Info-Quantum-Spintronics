@@ -8,6 +8,8 @@ cd Info-Quantum-Spintronics.wiki
 
 echo "# Rebasing qyber wiki"
 git remote add qyber https://qyber.black/quantum-spintronics/info-quantum-spintronics.wiki.git
+git config --global user.email "frank@langbein.org"
+git config --global user.name "Frank Langbein (on github)"
 git fetch qyber master
 git rebase qyber/master
 
