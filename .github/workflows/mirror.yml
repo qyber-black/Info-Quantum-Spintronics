@@ -7,5 +7,6 @@ jobs:
   mirror:
     runs-on: ubuntu-latest
     steps:
+    - uses: actions/checkout@v2
     - name: mirror
       run: ./mirror.sh
