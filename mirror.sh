@@ -13,7 +13,7 @@ if [ -z "${GITHUB_SERVER_URL}" ]; then
   GITHUB_SERVER_URL=https://github.com
 fi
 if [ -z "$GITHUB_REPOSITORY" ]; then
-  GITHUB_REPOSITORY="xis10z/Info-Quantum-Spintronics"
+  GITHUB_REPOSITORY="qyber-black/Info-Quantum-Spintronics"
 fi
 
 echo
